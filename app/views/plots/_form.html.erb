@@ -1,0 +1,12 @@
+<%= link_to "take the blue pill", plots_url, class: "blueButton" %>
+<%= form_for @plot do |f| %>
+<div>
+<%= f.label "What's the gist?" %><br>
+<%= f.text_field :title %>
+</div>
+<div>
+<%= f.label "Give us a plot" %><br>
+<%= f.text_area :story %>
+</div>
+<%= f.submit "tell the truth" %>
+<% end %>

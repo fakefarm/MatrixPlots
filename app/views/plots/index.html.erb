@@ -1,0 +1,10 @@
+<p style= "color:yellow;"><%= flash[:notice] %></p>
+<h1>What happens next?</h1>
+<h2>Matrix theories...</h2>
+<%= link_to "take the red pill", new_plot_url, class: "redpill" %>
+<% @plots.each do |p| %>
+  <ul>
+    <li>Transcript... <%= link_to p.title, plot_url(p.id) %></li>
+  </ul>
+<% end %>
+

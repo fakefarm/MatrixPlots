@@ -1,0 +1,8 @@
+<h1><%= @plot.title %></h1>
+<h2><%= @plot.story %></h2>
+<%= link_to "back", plots_url %> | 
+<%= link_to "edit", edit_plot_url %> | 
+<%= link_to "delete", plot_url, :confirm => 'You are the one', :method => :delete %>
+<%= link_to "take the red pill", new_plot_url, class: "redpill" %>
+
+
